@@ -66,3 +66,4 @@ if(!reset)//compute D flipflop logic here
 
 
 **RESULTS**
+Thus,the code executed successfully.
