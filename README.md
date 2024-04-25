@@ -41,29 +41,29 @@ RegisterNumber:212223240119
 
 ```
 module DFLIPFLOPNEGEDGE(D,Clock,reset,Q);
-input D,Clock,reset;
+input D,reset,Clock;
 output reg Q;
-always @ (negedge Clock)// use negative edge clock for triggereing condition 
-if(!reset)//compute D flipflop logic here
-       Q <= 0;
-  else
-       Q <= D; 
-   
- endmodule
+always @ (negedge Clock)
+if(!reset)
+Q <= 0;
+else
+Q <= D;
+endmodule
 
 
 ```
 
 **RTL LOGIC FOR FLIPFLOPS**
+![323297776-860d9914-c27f-448d-acc0-ee455460f97f](https://github.com/velupradeep/D-FLIPDLOP-NEGEDGE/assets/150329341/4df73e80-4773-4806-a231-48dcef406f55)
 
 
-![8 r](https://github.com/velupradeep/D-FLIPDLOP-NEGEDGE/assets/150329341/17bc98aa-6c3a-4898-bb31-d9c2870f3a77)
+
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![8 w](https://github.com/velupradeep/D-FLIPDLOP-NEGEDGE/assets/150329341/7bc330e7-330e-4957-b18b-5aca5deecd34)
 
 
+![323297856-20e4b3df-7c8e-49d3-b6e4-2056006a80ec](https://github.com/velupradeep/D-FLIPDLOP-NEGEDGE/assets/150329341/92a5108a-3ad6-4aef-9530-4d294532de67)
 
 
 
